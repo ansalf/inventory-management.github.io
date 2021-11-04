@@ -12,7 +12,7 @@ export const NavBar = ({user}) => {
     return (
         <div className="navbar">
        <div className="container flex">
-           <h1 className="logo"> <Link  to="/">Stock Manager.</Link></h1>
+           <h1 className="logo"> <Link  to="/">Inventory App</Link></h1>
            <nav>
                     <ul>
                         { user === null ? " " :

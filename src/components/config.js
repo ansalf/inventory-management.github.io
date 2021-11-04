@@ -10,22 +10,6 @@ const firebaseapp = firebase.initializeApp({
    appId: "1:924908023838:web:3a52781e3f0c04b00abe0f",
    measurementId: "G-VNS10SE7XG"
 });
-
-const SignUp = async (email, password) => {
-   try {
-     const res = await auth.createUserWithEmailAndPassword(email, password);
-     const user = res.user;
-     await db.collection("users").add({
-       uid: user.uid,
-       authProvider: "local",
-       email,
-     });
-   } catch (err) {
-     console.error(err);
-     alert(err.message);
-   }
- };
-
 const db = firebaseapp.firestore();
 const auth = firebase.auth();
 const storage = firebase.storage();
