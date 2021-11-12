@@ -25,7 +25,7 @@ a {
 
 /* Navbar */
 .navbar {
-  background-color: cadetblue;
+  background-color: #2f425c;
   color: #C3DDEB;
   height: 70px;
 }
@@ -60,7 +60,7 @@ a {
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  background: linear-gradient(to right, #66CDAA, #5F9EA0, #2F4F4F);
+  background: linear-gradient(to right, #3d506a, #5c6a81, #7b8699, #9aa3b2);
 }
 
 .form input {
@@ -108,12 +108,15 @@ a {
 } */
 
 .footer {
-  margin-top: 52px;
+  margin-top: 11.1%;
   text-align: center;
-  background-color: cadetblue;
+  background-color: #2f425c;
   padding: 15px;
+  width: 100%;
+  height: 50%;
+  padding-left: 10px;
   color: white;
-  bottom: 0;
+  bottom: 40%;
 }
 /* Table */
 
@@ -146,7 +149,7 @@ a {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: cadetblue;
+  background-color: #2f425c;
   color: white;
 }
 body {
@@ -350,7 +353,7 @@ textarea.shock-edit_input {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: cadetblue;
+  background-color: #2f425c;
   color: #fff;
   border: none;
   font-family: "Poppins", sans-serif;
@@ -369,7 +372,7 @@ textarea.shock-edit_input {
 /* Backgrounds & Coloured Button */
 .bg-primary,
 .btn-primary {
-  background-color: cadetblue;
+  background-color: #2f425c;
   color: #fff;
 }
 
@@ -413,7 +416,7 @@ textarea.shock-edit_input {
 /* Text-Color */
 
 .text-primary {
-  color:cadetblue;
+  color:#2f425c;
 }
 
 .text-secondary {
