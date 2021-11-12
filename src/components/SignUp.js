@@ -2,15 +2,16 @@ import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import { auth } from './config';
 
-export function SignUp() {
+
+function SignUp() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const SignUp = (event) => {
+    const signUp = (event) => {
         event.preventDefault();
     
         auth
-          .SignUpWithEmailAndPassword(email, password)
+          .createUserWithEmailAndPassword(email, password)
           .catch((error) => alert(error.message));
     };
     
@@ -40,7 +41,7 @@ export function SignUp() {
                 <input type="password" placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}/>
-                <button type="submit" onClick={SignUp}>SignUp</button>
+                <button type="submit" onClick={signUp}>SignUp</button>
                 <p className="message">Already Have Account? <Link to="/">Login</Link></p>
                 </form>
             </div>
